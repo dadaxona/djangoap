@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+           .conta{
+            width: 80%;
+            margin: auto;
+
+        }
+           .del{
+            padding: 11px 42px;
+            border: none;
+            background-color: #0dd2d2;
+            font-size: 20px;
+        }
+           .d{
+               width: 50%;
+           }
+           input{
+            width: 100%;
+            padding-block: 10px;
+            margin-top: 10px;
+            border: none;
+            border-bottom: 5px solid lightblue;
+           }
+            button{
+            padding: 10px 45px;
+            font-size: 16px;
+            border: none;
+            background: #0ed10e;
+            }
+
+
+    </style>
+</head>
+<body>
+   <div class="conta">
+           <h1>Create Bolimi</h1>
+       <br>
+        
+            <hr>
+         <div class="d">
+            <form action="" method="post">{% csrf_token %}
+             {{form.as_p}}
+             <button type="submit">Login</button>
+           </form>
+         </div>
+   </div>
+</body>
+</html>
